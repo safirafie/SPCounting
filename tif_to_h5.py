@@ -3,6 +3,8 @@ import tifffile
 import os
 from typing import Tuple
 
+
+
 ############################################################################################################## Functions
 # Get the path to the file
 def get_file_path(filename):

@@ -8,6 +8,7 @@ import tif_to_h5 as th5
 import read_h5 as rh5
 import read_particle_data as rpd
 
+
 '''
 This is the main program to run the functions in the other files. The main program is divided into different sections:
 - Convert TIFF to HDF5 file

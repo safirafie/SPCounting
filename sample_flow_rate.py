@@ -1,5 +1,6 @@
 import math
 
+
 def flow_rate(delta_p_psi, R=40e-6/2, eta=1.2e-3, L=0.30):
     '''
     The Hagen-Poiseuille equation relates the flow rate of a fluid through a capillary tube to the pressure 

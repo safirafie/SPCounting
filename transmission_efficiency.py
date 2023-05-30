@@ -4,6 +4,7 @@ import plot_figures as p
 import matplotlib.pyplot as plt
 import particle_linear_density as pld
 
+
 def calculate_transmission(particle_concentration: float, particle_linear_density: np.ndarray, zoom_level: float = 3.68, pixel_size: float = 6.5, particle_velocity: float = 29.1e6*60) -> np.ndarray:
     """
     Calculates the transmission efficiency of particles.

@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import optimize
 
+
 # Define the Gaussian function
 def gaussian(x, amplitude, mean, stddev):
     return amplitude * np.exp(-((x - mean) / (np.sqrt(2) * stddev)) ** 2)

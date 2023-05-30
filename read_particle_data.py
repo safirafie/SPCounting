@@ -5,6 +5,7 @@ from scipy import optimize, stats
 from typing import Dict, Tuple
 
 
+
 # Define the Gaussian function
 def gaussian(x, amplitude, mean, stddev):
     return amplitude * np.exp(-((x - mean) / (np.sqrt(2) * stddev)) ** 2)

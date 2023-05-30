@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from scipy import optimize
 
 
+
 def load_data(run_date: str, run: str) -> np.ndarray:
     """
     Loads the particle data for a given run.

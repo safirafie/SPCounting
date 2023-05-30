@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import h5py
 
+
 # plot_histogram: Plot the histogram of the image
 def threshold_images(hdf5_file, i, threshold_multiple, plot_histogram=0):
     with h5py.File(hdf5_file, 'r') as hdf:
