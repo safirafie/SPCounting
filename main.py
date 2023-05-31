@@ -116,7 +116,7 @@ run_list_1_l_per_min = ["_52", "_51", "_50", "_49","_48", "_47", "_44", "_41", "
 run_list_05_l_per_min = ["_30", "_29", "_28", "_27", "_26", "_25"] # 0.5 l/min
 #        run_list = ["_52", "_51", "_50", "_49","_48", "_47", "_44", "_41", "_40", "_39", "_38", "_37", "_36", "_35", "_34", "_33", "_32", "_31", "_23", "_22", "_21", "_20", "_19"]
 #        #run_list = ["_30", "_29", "_28", "_27", "_26", "_25"]
-run_list_average_speed = run_list_05_l_per_min
+run_list_average_speed = run_list_1_l_per_min
 bin_number = 100
 lower_speed_limit = 22
 upper_speed_limit = 40
@@ -127,9 +127,9 @@ if calculate_average_speed == 1:
     particle_velocity = pv.calculate_average_speed(run_date_average_speed, run_list_average_speed, bin_number, lower_speed_limit, upper_speed_limit)
     particle_velocity = particle_velocity*1e6*60    # average velocity in um/min 
 elif configuration == "gas":
-    particle_velocity = 28.94e6*60    # um/min the average velocity from the runs with 0.5 l/min N2 flow rate
+    particle_velocity = 28.04e6*60    # um/min the average velocity from the runs with 0.5 l/min N2 flow rate
 else:
-    particle_velocity = 29.1e6*60    # um/min the average velocity from the runs with 1 l/min N2 flow rate
+    particle_velocity = 28.2e6*60    # um/min the average velocity from the runs with 1 l/min N2 flow rate
 print("The average velocity is: ", particle_velocity/(1e6*60), " m/s")
 
 ################################################################################################### The sample flow rate

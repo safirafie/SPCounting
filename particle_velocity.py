@@ -10,7 +10,6 @@ def gaussian(x, amplitude, mean, stddev):
 
 def calculate_average_speed(run_date, run_list, bin_number, lower_speed_limit, upper_speed_limit):
     filtered_speeds = np.array([])
-    bin_number = 100  # Number of bins for the histogram, keep the same for both run_list
     for r in run_list:
         run = r
         folder_location = "./" + run_date + "/" + run_date + run + "/"
