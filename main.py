@@ -117,9 +117,9 @@ run_list_05_l_per_min = ["_30", "_29", "_28", "_27", "_26", "_25"] # 0.5 l/min
 #        run_list = ["_52", "_51", "_50", "_49","_48", "_47", "_44", "_41", "_40", "_39", "_38", "_37", "_36", "_35", "_34", "_33", "_32", "_31", "_23", "_22", "_21", "_20", "_19"]
 #        #run_list = ["_30", "_29", "_28", "_27", "_26", "_25"]
 run_list_average_speed = run_list_1_l_per_min
-bin_number = 100
-lower_speed_limit = 22
-upper_speed_limit = 40
+bin_number = 100 # optimize this number by looking at the histogram
+lower_speed_limit = 22 # Adjust this number to get better fitting
+upper_speed_limit = 40 # Adjust this number to get better fitting
 configuration = "uv"
 
 # Calculate the velocity
@@ -177,11 +177,11 @@ else:
 
 run_date_transmission = "20230314"
 
-plateau = "very_coarse"
+plateau = "coarse"
 if plateau == "fine":
     plateau_range = [10,20,30,40,50,100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600,1700,1800,1900,2000]
 elif plateau == "coarse":
-    plateau_range = [200,220,240,260,280,300,320,340,360,380,400]
+    plateau_range = [200,220,240,260,280,300,320,340,360,380,400] # linear density is "stable" in this range
 elif plateau == "very_coarse":
     plateau_range = [400]
 else:
