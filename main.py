@@ -192,7 +192,7 @@ else:
 - S75E80-N: Concentration (Upgrade): 4.90e+010 particles/ml
 - original Particle Concentration: 2.6E+11
 '''
-particle_concentration = 1.3e+010 # particles/ml 20 times diluted and measured with the nano sight
+particle_concentration = 1.9e+010 # particles/ml 20 times diluted and measured with the nano sight
 zoom_level = 3.68 # zoom 1=1.54, and zoom 2=3.12, and zoom 2.2=3.68
 pixel_size = 6.5 # um
 
